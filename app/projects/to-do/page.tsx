@@ -1,6 +1,7 @@
 'use client';
 import Navbar from '@/app/components/Navbar';
 import { useState } from 'react';
+import styles from '../../styles/page.module.css';
 
 export default function ToDoTwo() {
   const [value, setValue] = useState('');
@@ -84,7 +85,7 @@ export default function ToDoTwo() {
               <>
                 <div style={{ marginTop: 5 }}>
                   <input type="checkbox" key={i} />
-                  <label>{item}</label>
+                  <label className={styles.form_control}>{item}</label>
                 </div>
               </>
             );
